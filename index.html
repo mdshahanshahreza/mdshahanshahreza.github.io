@@ -3,109 +3,47 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Official personal website of Md Shahanshah Reza — education, achievements, school memories and future journey.">
 <title>Md Shahanshah Reza | Official Website</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:Arial,sans-serif;line-height:1.7;background:#f7f8fc;color:#172033}
-nav{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid #e7e9ef;padding:14px 6%;display:flex;justify-content:space-between;align-items:center}
-.logo{font-size:20px;font-weight:800;color:#263b80}
-nav a{margin-left:18px;text-decoration:none;color:#333;font-weight:600}
-.hero{min-height:82vh;display:flex;align-items:center;justify-content:center;padding:60px 7%;background:linear-gradient(135deg,#eef3ff,#fff)}
-.hero-wrap{max-width:1100px;width:100%;display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}
-.hero img{width:100%;max-width:500px;border-radius:24px;box-shadow:0 20px 50px #0002}
-.badge{display:inline-block;padding:7px 14px;border-radius:30px;background:#e5ebff;color:#263b80;font-weight:700;margin-bottom:15px}
-h1{font-size:clamp(38px,6vw,68px);line-height:1.05;margin-bottom:18px}
-h2{font-size:34px;margin-bottom:14px}
-.hero p,.section p{font-size:18px;color:#596174}
-.btn{display:inline-block;margin-top:25px;padding:13px 22px;border-radius:12px;background:#263b80;color:#fff;text-decoration:none;font-weight:700}
-section{padding:75px 7%}
-.container{max-width:1100px;margin:auto}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:30px}
-.card{background:#fff;padding:25px;border-radius:18px;box-shadow:0 8px 30px #0000000b;border:1px solid #eef0f5}
-.card h3{margin-bottom:8px}
-.update{margin-top:18px;padding:20px;background:#fff;border-left:5px solid #263b80;border-radius:12px;box-shadow:0 6px 20px #0001}
-footer{text-align:center;padding:30px;background:#172033;color:#fff}
-@media(max-width:750px){.hero-wrap,.cards{grid-template-columns:1fr}.hero{padding-top:35px}.hero img{max-width:none}nav a{margin-left:8px;font-size:13px}.logo{font-size:17px}.hero-wrap{gap:30px}}
+:root{--navy:#0b1730;--blue:#2563eb;--sky:#60a5fa;--soft:#eef5ff;--text:#172033;--muted:#64748b;--line:#e5eaf2;--white:#fff}
+body{font-family:Arial,Helvetica,sans-serif;background:#f7f9fc;color:var(--text);line-height:1.7}
+a{text-decoration:none;color:inherit}
+header{position:sticky;top:0;z-index:30;background:rgba(11,23,48,.96);backdrop-filter:blur(12px);color:#fff;border-bottom:1px solid rgba(255,255,255,.1)}
+.nav{max-width:1160px;margin:auto;padding:15px 22px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{font-weight:800;font-size:18px;letter-spacing:.2px;white-space:nowrap}.brand span{color:#60a5fa}
+.navlinks{display:flex;gap:20px;font-size:13px;color:#dbeafe;overflow-x:auto;white-space:nowrap}.navlinks a:hover{color:#fff}
+.hero{max-width:1160px;margin:auto;padding:54px 22px 38px;display:grid;grid-template-columns:minmax(0,1fr) 210px;gap:40px;align-items:center}
+.hero-copy{padding:18px 0}.eyebrow{display:inline-block;background:#dbeafe;color:#1d4ed8;border:1px solid #bfdbfe;border-radius:999px;padding:6px 12px;font-size:12px;font-weight:800;margin-bottom:15px;letter-spacing:.4px}
+h1{font-size:clamp(44px,6vw,70px);line-height:1.02;letter-spacing:-2.2px;color:#09152c;margin-bottom:15px}h1 span{color:var(--blue)}
+.hero-text{font-size:18px;color:var(--muted);max-width:690px}.buttons{display:flex;gap:10px;flex-wrap:wrap;margin-top:23px}.btn{display:inline-block;padding:11px 17px;border-radius:12px;font-weight:800;font-size:14px}.primary{background:var(--blue);color:#fff}.secondary{background:#fff;border:1px solid #d9e2ef;color:#1e293b}
+.profile-side{text-align:center}.profile-ring{width:178px;height:178px;padding:6px;margin:auto;border-radius:50%;background:linear-gradient(145deg,var(--blue),var(--sky));box-shadow:0 18px 45px rgba(37,99,235,.22)}.profile-ring img{width:100%;height:100%;object-fit:cover;object-position:center 42%;border:5px solid #fff;border-radius:50%;display:block}.profile-label{margin-top:10px;color:var(--muted);font-size:12px;font-weight:800}
+.stats{max-width:1160px;margin:0 auto 28px;padding:0 22px;display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.stat{background:#fff;border:1px solid var(--line);border-radius:16px;padding:17px;text-align:center;box-shadow:0 8px 25px rgba(15,23,42,.04)}.stat strong{display:block;color:var(--blue);font-size:22px}.stat span{font-size:12px;color:var(--muted)}
+section{max-width:1160px;margin:0 auto 28px;padding:34px 22px}.card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:28px;box-shadow:0 12px 35px rgba(15,23,42,.055)}.section-title{font-size:30px;line-height:1.2;color:#0b1730;margin-bottom:8px}.section-sub{color:var(--muted);margin-bottom:20px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.item{background:#fbfdff;border:1px solid var(--line);border-radius:16px;padding:19px}.item h3{font-size:16px;color:#1d4ed8;margin-bottom:5px}.item p{font-size:14px;color:var(--muted)}
+.timeline{position:relative;margin-top:20px;padding-left:25px;border-left:3px solid #bfdbfe}.timeline-item{position:relative;margin-bottom:17px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:17px 19px}.timeline-item:before{content:"";position:absolute;width:11px;height:11px;border-radius:50%;background:var(--blue);left:-32px;top:23px;border:3px solid #eef5ff}.timeline-item h3{color:#1d4ed8;font-size:16px}
+.feature{display:grid;grid-template-columns:240px 1fr;gap:25px;align-items:center}.feature-img{width:240px;height:180px;object-fit:cover;object-position:center 42%;border-radius:18px;border:1px solid var(--line);box-shadow:0 10px 25px rgba(15,23,42,.08)}.tag{display:inline-block;font-size:11px;font-weight:800;color:#1d4ed8;background:#dbeafe;padding:5px 9px;border-radius:999px;margin-bottom:8px}
+.events{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.event{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden}.event-photo{height:170px;background:linear-gradient(135deg,#eaf2ff,#f8fafc);display:flex;align-items:center;justify-content:center;color:#64748b;font-weight:800;text-align:center;padding:20px}.event-body{padding:17px}.event-body h3{font-size:16px;color:#172033;margin-bottom:5px}.event-body p{font-size:13px;color:var(--muted)}
+.goal{display:grid;grid-template-columns:1fr 1fr;gap:15px}.goal-card{padding:20px;border-radius:17px;background:linear-gradient(135deg,#0b1730,#17376f);color:#fff}.goal-card h3{margin-bottom:5px}.goal-card p{color:#cbd5e1;font-size:14px}
+.contact{background:#0b1730;color:#fff;max-width:none;margin-top:15px}.contact-inner{max-width:1160px;margin:auto;padding:38px 22px}.contact .section-title{color:#fff}.contact p{color:#cbd5e1}.contact a{color:#93c5fd;font-weight:700}
+footer{text-align:center;padding:27px;background:#06101f;color:#94a3b8;font-size:13px}
+@media(max-width:820px){.nav{align-items:flex-start;flex-direction:column}.navlinks{width:100%;padding-bottom:2px}.hero{grid-template-columns:1fr 120px;gap:18px;padding-top:38px;align-items:start}.profile-side{padding-top:8px}.profile-ring{width:112px;height:112px}.profile-label{font-size:10px}h1{font-size:46px}.hero-text{font-size:16px}.stats{grid-template-columns:repeat(2,1fr)}.grid,.events,.goal{grid-template-columns:1fr}.feature{grid-template-columns:1fr}.feature-img{width:100%;height:210px}.buttons{margin-top:18px}.card{padding:22px}section{padding-top:28px}}
+@media(max-width:470px){.hero{grid-template-columns:1fr 96px}.profile-ring{width:92px;height:92px}.profile-label{display:none}h1{font-size:39px;letter-spacing:-1.5px}.eyebrow{font-size:10px}.hero-text{font-size:15px}.btn{padding:10px 13px}.stats{padding:0 14px}.hero{padding-left:14px;padding-right:14px}}
 </style>
 </head>
 <body>
-
-<nav>
-  <div class="logo">Md Shahanshah Reza</div>
-  <div>
-    <a href="#about">About</a>
-    <a href="#education">Education</a>
-    <a href="#achievements">Achievements</a>
-    <a href="#updates">Updates</a>
-    <a href="#contact">Contact</a>
-  </div>
-</nav>
-
-<header class="hero">
-  <div class="hero-wrap">
-    <div>
-      <span class="badge">Welcome to my official website</span>
-      <h1>My Story,<br>My Journey.</h1>
-      <p>Welcome to my personal website, where I share my education, achievements, journey, and important updates.</p>
-      <a class="btn" href="#about">About Me ↓</a>
-    </div>
-    <img src="profile.jpg" alt="Md Shahanshah Reza">
-  </div>
-</header>
-
-<section id="about">
-  <div class="container section">
-    <h2>About Me</h2>
-    <p>My name is <strong>Md Shahanshah Reza</strong>. I was born in Bihar, India. I have been interested in education and learning from an early age. This website is a place where I share information about my education, achievements, journey, and future updates.</p>
-  </div>
-</section>
-
-<section id="education">
-  <div class="container">
-    <h2>My Education</h2>
-    <div class="cards">
-      <div class="card"><h3>📚 Classes 1–5</h3><p>Primary School, Mirzadpur</p></div>
-      <div class="card"><h3>📖 Classes 6–8</h3><p>Utkramit Madhya Vidyalaya, Mohna</p></div>
-      <div class="card"><h3>🎓 Classes 9–10</h3><p>Utkramit Uchch Vidyalaya, Chauki</p></div>
-      <div class="card"><h3>🏫 Class 10</h3><p>Passed in the 2024–25 session with <strong>83.04%</strong>.</p></div>
-      <div class="card"><h3>📘 Current Class</h3><p>Currently studying in <strong>Class 12</strong>.</p></div>
-    </div>
-  </div>
-</section>
-
-<section id="achievements">
-  <div class="container">
-    <h2>My Achievements</h2>
-    <div class="cards">
-      <div class="card"><h3>🏆 Class 10 Result</h3><p>Passed Class 10 with an overall score of <strong>83.04%</strong>.</p></div>
-      <div class="card"><h3>📚 Continuing Education</h3><p>Currently continuing my studies in <strong>Class 12</strong>.</p></div>
-      <div class="card"><h3>🚀 My Journey</h3><p>Continuing my educational journey with dedication, learning, and hard work.</p></div>
-    </div>
-  </div>
-</section>
-
-<section id="updates">
-  <div class="container">
-    <h2>Latest Updates</h2>
-    <p>This section will be updated with my new achievements, educational milestones, certificates, photos, and other important updates.</p>
-    <div class="update"><strong>Website Launch</strong><br>My official personal website is now live. More updates will be added here in the future.</div>
-  </div>
-</section>
-
-
-<section id="contact">
-  <div class="container">
-    <h2>Contact</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>📧 Email</h3>
-        <p><a href="mailto:mohdshahanshah.r786@gmail.com">mohdshahanshah.r786@gmail.com</a></p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer>© 2026 Md Shahanshah Reza · All Rights Reserved</footer>
-</body>
-</html>
+<header><div class="nav"><div class="brand">Md Shahanshah <span>Reza</span></div><nav class="navlinks"><a href="#about">About</a><a href="#education">Education</a><a href="#achievements">Achievements</a><a href="#memories">Memories</a><a href="#updates">Updates</a><a href="#contact">Contact</a></nav></div></header>
+<main>
+<section class="hero"><div class="hero-copy"><div class="eyebrow">OFFICIAL WEBSITE • CLASS 12 STUDENT</div><h1>Md Shahanshah <span>Reza</span></h1><p class="hero-text">My education, achievements, school memories and journey — all in one place. This website will grow with me as I add new milestones and important moments.</p><div class="buttons"><a class="btn primary" href="#about">Explore My Journey →</a><a class="btn secondary" href="#contact">Contact Me</a></div></div><div class="profile-side"><div class="profile-ring"><img src="profile.jpg" alt="Md Shahanshah Reza"></div><div class="profile-label">My Journey</div></div></section>
+<div class="stats"><div class="stat"><strong>83.04%</strong><span>Class 10 Result</span></div><div class="stat"><strong>2024–25</strong><span>Matric Session</span></div><div class="stat"><strong>Class 12</strong><span>Current Study</span></div><div class="stat"><strong>∞</strong><span>Future Updates</span></div></div>
+<section id="about"><div class="card"><h2 class="section-title">About Me</h2><p class="section-sub">A short introduction</p><p>My name is <strong>Md Shahanshah Reza</strong>. I was born in Bihar, India. I have been interested in education and learning from an early stage. This website is my personal space to share my education, achievements, school memories, important updates and future milestones.</p></div></section>
+<section id="education"><h2 class="section-title">Education</h2><p class="section-sub">My academic journey</p><div class="grid"><div class="item"><h3>Classes 1–5</h3><p>Primary School, Mirzadpur</p></div><div class="item"><h3>Classes 6–8</h3><p>Utkramit Madhya Vidyalaya, Mohna</p></div><div class="item"><h3>Classes 9–10</h3><p>Utkramit Uchch Vidyalaya, Chauki</p></div><div class="item"><h3>Class 10</h3><p>Session 2024–25 • Score: <strong>83.04%</strong></p></div><div class="item"><h3>Current</h3><p>Class 12 student</p></div></div></section>
+<section id="achievements"><div class="card"><h2 class="section-title">Achievements</h2><p class="section-sub">Milestones and moments</p><div class="feature"><img class="feature-img" src="profile.jpg" alt="Achievement moment"><div><span class="tag">FEATURED MOMENT</span><h3 style="font-size:22px;margin-bottom:7px">Achievement Trophy Moment</h3><p style="color:#64748b">A special moment from my journey. More achievements, certificates and milestones can be added here in the future.</p></div></div></div></section>
+<section id="memories"><h2 class="section-title">School Events & Memories</h2><p class="section-sub">Group photos and memorable moments from school functions, activities and events.</p><div class="events"><div class="event"><div class="event-photo">📸<br>New Event Photo<br>will be added here</div><div class="event-body"><h3>School Function</h3><p>Add the group photo, event name and date whenever a new function happens.</p></div></div><div class="event"><div class="event-photo">🎓<br>Class Activity<br>will be added here</div><div class="event-body"><h3>Class Activity</h3><p>Future class activities and group memories can be displayed here.</p></div></div><div class="event"><div class="event-photo">🏫<br>Special School Moment</div><div class="event-body"><h3>Special Moment</h3><p>Another photo card ready for a future event or celebration.</p></div></div></div></section>
+<section id="updates"><h2 class="section-title">Latest Updates</h2><p class="section-sub">A timeline that can keep growing</p><div class="timeline"><div class="timeline-item"><h3>Website launched</h3><p>My official personal website is now live.</p></div><div class="timeline-item"><h3>New memories section</h3><p>A dedicated space is ready for future school functions and group photos.</p></div><div class="timeline-item"><h3>More updates coming</h3><p>New achievements, learning milestones and important moments will be added over time.</p></div></div></section>
+<section><div class="goal"><div class="goal-card"><h3>Learning</h3><p>Keep improving through education, practice and new experiences.</p></div><div class="goal-card"><h3>Future Milestones</h3><p>This website will continue to grow with new achievements and memories.</p></div></div></section>
+<section id="contact" class="contact"><div class="contact-inner"><h2 class="section-title">Contact</h2><p class="section-sub">For website-related contact</p><p>Email: <a href="mailto:mohdshahanshah.r786@gmail.com">mohdshahanshah.r786@gmail.com</a></p></div></section>
+</main><footer>© 2026 Md Shahanshah Reza • Official Website</footer>
+</body></html>
